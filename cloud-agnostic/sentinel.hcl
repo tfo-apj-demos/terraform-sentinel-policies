@@ -96,7 +96,7 @@ policy "require-all-providers-have-version-constraint" {
 
 policy "require-all-resources-from-pmr" {
     source = "./require-all-resources-from-pmr.sentinel"
-    enforcement_level = "advisory"
+    enforcement_level = "soft-mandatory"
 }
 
 policy "restrict-databricks-clusters" {
