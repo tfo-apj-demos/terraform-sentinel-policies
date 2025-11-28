@@ -29,7 +29,7 @@ module "tfrun-functions" {
 # This enforces a modular architecture where the root module only calls modules
 policy "require-all-resources-from-pmr" {
     source = "../cloud-agnostic/require-all-resources-from-pmr.sentinel"
-    enforcement_level = "mandatory"
+    enforcement_level = "soft-mandatory"
 }
 
 # Add additional policies here that should be soft-mandatory
