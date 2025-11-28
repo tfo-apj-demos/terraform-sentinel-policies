@@ -94,11 +94,11 @@ policy "require-all-providers-have-version-constraint" {
     enforcement_level = "advisory"
 }
 
-policy "require-all-resources-from-pmr" {
-    source = "./require-all-resources-from-pmr.sentinel"
-    enforcement_level = "advisory"
-    # Note: Soft-mandatory version is in cloud-agnostic-soft-mandatory policy set
-}
+# policy "require-all-resources-from-pmr" {
+#     source = "./require-all-resources-from-pmr.sentinel"
+#     enforcement_level = "advisory"
+#     # Note: Soft-mandatory version is in cloud-agnostic-soft-mandatory policy set
+# }
 
 policy "restrict-databricks-clusters" {
     source = "./restrict-databricks-clusters.sentinel"
